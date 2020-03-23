@@ -1,0 +1,176 @@
+/* 
+colors:
+
+
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+    color: #777;
+    padding: 30px;
+}
+
+.header {
+	height: 95vh;
+	background-image: linear-gradient(
+			to right bottom,
+			rgba(151, 16, 7, 0.8),
+			rgba(255, 145, 0, 0.8)
+		),
+		url(../img/header-bg.jpg);
+	background-size: cover; /* related to view port */
+    background-position: top; /* related to responsive when ever we change the size top of the image would stay fix  */
+    clip-path: polygon(0 0, 100% 0 , 100% 80vh,0 100%);
+    position: relative;
+}
+.logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.logo{
+    height: 10em;
+}
+
+.text-box{
+    top: 40%;
+    left: 50%;
+    position: absolute; 
+    transform: translate(-50%,-50%); 
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+}
+.heading-primary{
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 0.5em;
+}
+
+.heading-primary-main{
+    display: block;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1em;
+    animation-name: moveToRight;
+    animation-duration: 1s;
+    /* animation-delay: 1s; */
+    /* animation-iteration-count: 5; */
+    /* animation-timing-function: ease-in-out; */
+}
+.heading-primary-sub{
+    display: block;
+    font-size: 0.6em;
+    font-weight: 800;
+    letter-spacing: 1em;
+    animation-name: moveToLeft;
+    animation-duration: 1s;
+    
+}
+
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+    
+}
+
+.btn:hover{
+    transform: translateY(-0.3em);
+    box-shadow: 0 10px 20px rgba(20, 2, 1, 0.8);
+}
+.btn:active{
+    transform: translateY(-0.1em);
+    box-shadow: 0 5px 10px rgba(20, 2, 1, 0.8);
+}
+.btn-white{
+    background-color: #fff;
+    color: #777;
+    
+}
+.btn::after{
+    content:"";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.btn-white::after{
+    background-color: rgb(236, 229, 229);
+}
+
+.btn:hover::after{
+    transform: scale(2);
+    opacity: 0;
+}
+.btn-animated{
+    animation-name: moveToUp;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveToRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px)  ;
+        /* transform: translateX(-100px) rotate3d(2, -1, -1, -1.2turn) ; */
+        /* transform: translateX(-100px) rotate(10deg); */
+    }
+    /* what happened between 2 stage */
+    80%{
+        transform: translateX(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);/* to where is it right now */
+        
+    }
+}
+@keyframes moveToLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    /* what happened between 2 stage */
+    80%{
+        transform: translateX(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);/* to where is it right now */
+        
+    }
+}
+@keyframes moveToUp{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    /* what happened between 2 stage */
+    100%{
+        opacity: 1;
+        transform: translate(0);/* to where is it right now */
+        
+    }
+}
