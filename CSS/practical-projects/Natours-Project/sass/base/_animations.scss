@@ -1,0 +1,41 @@
+@keyframes moveToRight {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+		/* transform: translateX(-100px) rotate3d(2, -1, -1, -1.2turn) ; */
+		/* transform: translateX(-100px) rotate(10deg); */
+	}
+	/* what happened between 2 stage */
+	80% {
+		transform: translateX(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0); /* to where is it right now */
+	}
+}
+@keyframes moveToLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+	/* what happened between 2 stage */
+	80% {
+		transform: translateX(-20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0); /* to where is it right now */
+	}
+}
+@keyframes moveToUp {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	/* what happened between 2 stage */
+	100% {
+		opacity: 1;
+		transform: translate(0); /* to where is it right now */
+	}
+}
