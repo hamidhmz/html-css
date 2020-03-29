@@ -8,7 +8,7 @@
 		url(../img/header-bg.jpg);
 	background-size: cover; /* related to view port */
 	background-position: top; /* related to responsive when ever we change the size top of the image would stay fix  */
-	clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 	position: relative;
 	&__logo-box {
 		position: absolute;
