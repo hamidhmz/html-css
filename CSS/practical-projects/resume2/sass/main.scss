@@ -1,0 +1,25 @@
+@import "abstracts/variables";
+
+* {
+	margin: 0;
+    padding: 0;
+    // display: block;
+    // box-sizing: border-box;
+}
+
+.upper-container {
+    background-color: $color-primary-light;
+}
+
+.middle-container {
+    background-color: red;
+	width: 200px;
+    height: 200px;
+}
+
+.bottom-container {
+    background-color: blue;
+	width: 200px;
+    height: 200px;
+    
+}
