@@ -2,15 +2,43 @@
   margin: 0;
   padding: 0; }
 
+html {
+  font-size: 100%; }
+
+body {
+  font-family: 'Indie Flower','Pacifico','Shadows Into Light', cursive;
+  text-align: center; }
+
 .upper-container {
-  background-color: #b8f8e1; }
+  background-color: #fac0a9;
+  text-align: center;
+  padding-top: 10%;
+  position: relative;
+  width: 100%; }
+  .upper-container > .environment-img {
+    width: 100%; }
+
+.cloud-1 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 5rem;
+  width: 25%; }
+
+.cloud-2 {
+  position: absolute;
+  top: 7%;
+  left: 17%;
+  width: 25%; }
+
+.cloud-3 {
+  position: absolute;
+  top: 0;
+  right: 15%;
+  width: 25%; }
 
 .middle-container {
-  background-color: red;
-  width: 200px;
-  height: 200px; }
+  display: inline-block; }
 
 .bottom-container {
-  background-color: blue;
-  width: 200px;
-  height: 200px; }
+  display: block; }
