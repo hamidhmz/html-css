@@ -32,16 +32,17 @@ body {
 .upper-container {
   background-color: #fac0a9;
   text-align: center;
-  padding-top: 10%;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  display: inline-block; }
   .upper-container h1 {
     font-family: "Pacifico", "Shadows Into Light", cursive; }
   .upper-container > .environment-img {
     width: 100%; }
   .upper-container .text {
     font-weight: normal;
-    color: #c06c84; }
+    color: #c06c84;
+    display: inline-block; }
   .upper-container .cloud-1 {
     display: none;
     position: absolute;
@@ -100,10 +101,12 @@ body {
     .middle-container .middle-container__contact-me .middle-container__btn {
       text-decoration: none;
       color: #fff;
-      background-color: #6c567b;
+      background-image: linear-gradient(#f67280, #6c567b);
       padding: 0.5rem 1rem;
       border-radius: 6px;
       margin: 1000px 0; }
+      .middle-container .middle-container__contact-me .middle-container__btn:hover {
+        background-image: linear-gradient(#f9a2ab, #866c98); }
 
 .bottom-container {
   padding: 3rem 0;
@@ -119,3 +122,5 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 6px;
     margin: 1000px 0; }
+    .bottom-container .bottom-container__footer-link:hover {
+      color: #fff; }

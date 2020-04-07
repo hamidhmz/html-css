@@ -1,0 +1,21 @@
+@import "abstracts/variables";
+
+* {
+	font-family: "Montserrat Alternates", sans-serif;
+}
+.logo{
+	a{
+		font-family: "Ubuntu",sans-serif;
+	}
+}
+.margin-auto {
+	margin: auto;
+}
+.align-center {
+	text-align: center;
+}
+
+.section-1 {
+	background-image: linear-gradient(to right, $color-primary-1, $color-white);
+	line-height: 1.5;
+}

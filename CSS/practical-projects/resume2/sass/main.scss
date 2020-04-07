@@ -42,9 +42,9 @@ body {
 .upper-container {
 	background-color: $color-primary-light;
 	text-align: center;
-	padding-top: 10%;
 	position: relative;
 	width: 100%;
+	display: inline-block;
 	h1 {
 		font-family: "Pacifico", "Shadows Into Light", cursive;
 	}
@@ -54,6 +54,7 @@ body {
 	.text {
 		font-weight: normal;
 		color: $color-primary-dark-2;
+		display: inline-block;
 	}
 	.cloud-1 {
 		display: none;
@@ -74,6 +75,7 @@ body {
 		right: 15%;
 		width: 25%;
 	}
+
 }
 
 .middle-container {
@@ -131,10 +133,13 @@ body {
 		.middle-container__btn {
 			text-decoration: none;
 			color: $color-white;
-			background-color: $color-primary-dark-3;
+			background-image: linear-gradient($color-primary-dark-1,$color-primary-dark-3);
 			padding: 0.5rem 1rem;
 			border-radius: 6px;
 			margin: 1000px 0;
+			&:hover{
+				background-image:  linear-gradient(lighten($color-primary-dark-1,10%),lighten($color-primary-dark-3,10%)) ;
+			}
 		}
 	}
 }
@@ -154,5 +159,8 @@ body {
 		padding: 0.5rem 1rem;
 		border-radius: 6px;
 		margin: 1000px 0;
+		&:hover{	
+			color: $color-white;
+		}
 	}
 }

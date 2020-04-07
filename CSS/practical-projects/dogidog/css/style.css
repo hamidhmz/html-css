@@ -1,0 +1,15 @@
+* {
+  font-family: "Montserrat Alternates", sans-serif; }
+
+.logo a {
+  font-family: "Ubuntu",sans-serif; }
+
+.margin-auto {
+  margin: auto; }
+
+.align-center {
+  text-align: center; }
+
+.section-1 {
+  background-image: linear-gradient(to right, #f08a5d, #fff);
+  line-height: 1.5; }
