@@ -1,11 +1,33 @@
 * {
-  font-family: "Montserrat Alternates", sans-serif; }
+  font-family: "Ubuntu", sans-serif; }
 
 .logo a {
-  font-family: "Ubuntu",sans-serif; }
+  font-family: "Ubuntu", sans-serif; }
+
+body {
+  width: 100%; }
+
+.container-fluid {
+  padding: 0 10%;
+  width: 100%; }
+
+ion-icon {
+  vertical-align: middle; }
+
+.img-width-inherit {
+  width: inherit; }
 
 .margin-auto {
   margin: auto; }
+
+.padding-top {
+  padding-top: 3rem; }
+
+.margin-btn-second-el-header {
+  margin: 1rem; }
+
+.margin-top {
+  margin-top: 7rem; }
 
 .align-center {
   text-align: center; }
@@ -13,3 +35,20 @@
 .section-1 {
   background-image: linear-gradient(to right, #f08a5d, #fff);
   line-height: 1.5; }
+
+.section-2 .middle-item:hover {
+  transform: scale(0.9);
+  transition: all 0.4s; }
+
+.section-2 .img-section {
+  width: 7rem;
+  height: 7rem; }
+
+.section-3 {
+  font-size: 2rem;
+  font-family: cursive;
+  background-color: #b83b5e; }
+  .section-3 .testimonial .testimonial-image {
+    border-radius: 100%;
+    width: 8rem;
+    height: 8rem; }
