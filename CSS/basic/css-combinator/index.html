@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS combinators</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        div p {
+            border-radius: 10px;
+            border-color: black;
+            border-style: solid;
+        }
+
+        div>p {
+            background-color: aqua;
+        }
+
+        h2+p{
+            background-color: chocolate;
+        }
+
+        h3 ~ p{
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>this is heading</h2>
+        <h1>this is heading</h1>
+        <p>this is paragraph element</p>
+        <span>
+            <p>this is paragraph inside span</p>
+        </span>
+        <p>this is paragraph element</p>
+        <h1>this is heading</h1>
+        <h2>this is heading</h2>
+        <p>this is paragraph element</p>
+        <h3>this is paragraph</h3>
+        <span>
+            <p>this is paragraph inside span</p>
+        </span>
+        <h1>this is heading</h1>
+        <p>this is paragraph element</p>
+        <h1>this is heading</h1>
+        <h1>this is heading</h1>
+        <p>this is paragraph element</p>
+        <h1>this is heading</h1>
+        <h1>this is heading</h1>
+        <p>this is paragraph element</p>
+        <h1>this is heading</h1>
+    </div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="" async defer></script>
+</body>
+
+</html>

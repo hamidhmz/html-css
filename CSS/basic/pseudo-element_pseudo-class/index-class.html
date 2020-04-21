@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        /* pseudo class */
+        a:link {
+            color: aqua;
+        }
+
+        /* when click on */
+        a:active {
+            color: black;
+        }
+
+        /* when some link has been visited */
+        a:visited {
+            color: chocolate;
+        }
+
+        .a {
+            display: none;
+        }
+
+        .parent:hover .a {
+            color: blueviolet;
+            display: block;
+            /* display:unset ; */
+        }
+
+        li {
+            list-style-type: upper-roman;
+        }
+
+        li:last-child {
+            color: red;
+        }
+
+        li:first-child {
+            color: yellowgreen;
+        }
+
+        li:nth-child(3) {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent" href="https://google.com">
+        click and go to google
+        <div>
+            <a class="a" href="https://yahoo.com">this is another link</a>
+        </div>
+    </div>
+
+    <ul>
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+        <li>list5</li>
+    </ul>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="" async defer></script>
+</body>
+
+</html>
